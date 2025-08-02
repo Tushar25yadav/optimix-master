@@ -40,30 +40,6 @@ function CommodityIntro(props: Props) {
             >
                 <MotionLine />
                 <CommoditiesGrid />
-                <Box py={4} sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <motion.div custom={5} variants={textVariant}>
-                        <Button
-                            variant="outlined"
-                            sx={{
-                                mt: 2,
-                                color: 'black',
-                                borderColor: '#AF6118',
-                                "&:hover": {
-                                    bgcolor: "#AF6118",
-                                    borderColor: 'white',
-                                    color: 'white'
-                                },
-                                px: 4,
-                                py: 1.5,
-                                textTransform: "none",
-                                fontWeight: 600,
-                            }}
-                            onClick={handleButtonClick}
-                        >
-                            Learn More
-                        </Button>
-                    </motion.div>
-                </Box>
             </SectionIntro>
         </>
     );

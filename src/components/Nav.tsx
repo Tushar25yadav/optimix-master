@@ -32,6 +32,10 @@ export default function Nav(props: Props) {
   const handleNavItemClick = (item: string) => {
     onNavChange(item);
     setMobileOpen(false);
+    const element = document.getElementById(item);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
   };
 
   const drawer = (
@@ -73,7 +77,7 @@ export default function Nav(props: Props) {
         component="nav"
         sx={{
           backgroundColor: 'rgba(0, 0, 0, 0.4)',
-          backdropFilter: 'blur(12px)',
+          backdropFilter: 'blur(25px)',
           boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
           position: 'absolute',
           left: 0,
@@ -97,7 +101,7 @@ export default function Nav(props: Props) {
           <Box sx={{ display: 'flex', flexGrow: 1, justifyContent: { xs: 'flex-end', sm: 'flex-start' } }}>
             <Box
               component="img"
-              src={`${process.env.PUBLIC_URL}/logo.svg`}
+              src={`${process.env.PUBLIC_URL}/logo2.png`}
               alt="logo"
               sx={{ height: 50, cursor: 'pointer' }}
               onClick={() => onNavChange('Home')}

@@ -4,7 +4,7 @@ import Heading from "../components/Heading";
 import Contact from "./Contact/Contact";
 import AboutUsIntro from "../IntroPages/AboutIntro/AboutUsIntro";
 import ProjectsIntro from "../IntroPages/ProjectIntro/ProjectsIntro";
-import ServicesIntro from "../IntroPages/ServiceIntro/ServicesIntro"
+import ServicesIntro from "../IntroPages/ServiceIntro/ServicesIntro";
 import ParallaxImage from "../components/ParallaxImage";
 import { Color } from "../colors";
 import CommodityIntro from "../IntroPages/CommodityIntro/CommodityIntro";
@@ -23,7 +23,7 @@ const Home: React.FC<Props> = ({ onNavChange }) => {
             <motion.div
                 style={{
                     position: "relative",
-                    backgroundImage: `url(${process.env.PUBLIC_URL + "/backimg.webp"})`,
+                    backgroundImage: `url(${process.env.PUBLIC_URL + "/backimg2.jpg"})`,
                     backgroundSize: "cover",
                     backgroundPositionY: bgY,
                     backgroundRepeat: "no-repeat",
@@ -35,7 +35,10 @@ const Home: React.FC<Props> = ({ onNavChange }) => {
                 }}
                 initial={{ scale: 1.05, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-            />
+            >
+                {/* Must include content to render */}
+                <div />
+            </motion.div>
 
             {/* Heading Overlay */}
             <div
@@ -66,27 +69,38 @@ const Home: React.FC<Props> = ({ onNavChange }) => {
                     maxWidth: "90vw",
                     fontSize: "14px",
                     boxShadow: `
-              0 4px 10px rgba(0,0,0,0.3),
-              0 8px 24px rgba(0,0,0,0.25),
-              0 12px 48px rgba(0,0,0,0.2)
-            `,
+                        0 4px 10px rgba(0,0,0,0.3),
+                        0 8px 24px rgba(0,0,0,0.25),
+                        0 12px 48px rgba(0,0,0,0.2)
+                    `,
                 }}
             >
-            <Form />
+                <Form />
             </div>
 
-            <AboutUsIntro onNavChange={onNavChange} />
-            <ServicesIntro onNavChange={onNavChange} />
+            {/* About Us Section */}
+            <section id="About Us">
+                <AboutUsIntro onNavChange={onNavChange} />
+            </section>
+
+            {/* Quote Section */}
             <ParallaxImage
                 image="https://static.wixstatic.com/media/c837a6_c4ec010a6ed34a1e8b7068fffc7e6062~mv2.jpg/v1/fill/w_1960,h_1946,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_c4ec010a6ed34a1e8b7068fffc7e6062~mv2.jpg"
                 text="We believe business must look beyond itself to serve communities and build lasting impact."
                 author="Ratan Tata"
             />
-            <CommodityIntro onNavChange={onNavChange} />
-            <ProjectsIntro onNavChange={onNavChange} />
-            <Contact />
+
+            {/* Product Section */}
+            <section id="Product">
+                <CommodityIntro onNavChange={onNavChange} />
+            </section>
+
+            {/* Contact Section */}
+            <section id="Contact">
+                <Contact />
+            </section>
         </>
     );
-}
+};
 
 export default Home;

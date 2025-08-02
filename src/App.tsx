@@ -7,13 +7,14 @@ import Projects from './pages/Projects/Projects';
 import ContactWrap from './pages/Contact/ContactWrap';
 import Commodity from './pages/Commodity/Commodity';
 
-const navItems = ['Home', 'About Us', 'Services', 'Commodity', 'Projects', 'Contact'];
+const navItems = ['Home', 'About Us', 'Product', 'Contact'];
 
 function App() {
   const [activeNavItem, setActiveNavItem] = useState('Home');
 
   const handleNavChange = (item: string) => {
-      setActiveNavItem(item);
+      // setActiveNavItem(item);
+      console.log("Nav item clicked:", item);
   };
 
   const renderPage = () => {
@@ -32,6 +33,7 @@ function App() {
         return <ContactWrap />;
       default:
         return <Home onNavChange={handleNavChange} />;
+
     }
   };
 

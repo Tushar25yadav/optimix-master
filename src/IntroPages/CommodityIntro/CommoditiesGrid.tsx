@@ -7,28 +7,20 @@ import {
   useTheme,
   useMediaQuery,
 } from "@mui/material";
-import BuildIcon from "@mui/icons-material/Build";
-import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
-import EngineeringIcon from "@mui/icons-material/Engineering";
-import OpacityIcon from "@mui/icons-material/Opacity";
-import ViewInArIcon from "@mui/icons-material/ViewInAr";
-import ScienceIcon from "@mui/icons-material/Science";
-import ToysIcon from "@mui/icons-material/Toys";
-import ElectricalServicesIcon from "@mui/icons-material/ElectricalServices";
-import ExtensionIcon from "@mui/icons-material/Extension";
 
+// Sample image URLs (replace these with actual paths or URLs)
 const items = [
-  { label: "Small Fabrication", icon: <BuildIcon style={{color: '#AF6118', fontSize:'6rem'}} /> },
-  { label: "Heavy Fabrication", icon: <PrecisionManufacturingIcon style={{color: '#AF6118', fontSize:'6rem'}} /> },
-  { label: "Machining", icon: <EngineeringIcon style={{color: '#AF6118', fontSize:'6rem'}} /> },
-  { label: "Hydraulics", icon: <OpacityIcon style={{color: '#AF6118', fontSize:'6rem'}} /> },
-  { label: "Castings", icon: <ViewInArIcon style={{color: '#AF6118', fontSize:'6rem'}} /> },
-  { label: "Plastics", icon: <ScienceIcon style={{color: '#AF6118', fontSize:'6rem'}} /> },
-  { label: "Rubber", icon: <ToysIcon style={{color: '#AF6118', fontSize:'6rem'}} /> },
-  { label: "Electricals", icon: <ElectricalServicesIcon style={{color: '#AF6118', fontSize:'6rem'}} /> },
+  { label: "Ribbon Blender", image: process.env.PUBLIC_URL + "/prod1.webp" },
+  { label: "Liquid Mixing Machine", image: process.env.PUBLIC_URL + "/prod2.webp" },
+  { label: "Detergent Cage Mill", image: process.env.PUBLIC_URL + "/prod3.webp" },
+  { label: "Ball Mill", image: process.env.PUBLIC_URL + "/prod4.webp" },
+  { label: "Plastic Paint Mixer Machine",  image: process.env.PUBLIC_URL + "/prod5.webp" },
+  { label: "Industrial Agitator", image: process.env.PUBLIC_URL + "/prod6.webp" },
+  { label: "Vibro Screener", image: process.env.PUBLIC_URL + "/prod7.webp" },
+  { label: "Hot Air Dryer", image: process.env.PUBLIC_URL + "/prod8.webp" },
   {
-    label: "Auxiliary Components",
-    icon: <ExtensionIcon style={{color: '#AF6118', fontSize:'6rem'}} />,
+    label: "High Speed Stirrer",
+    image: process.env.PUBLIC_URL + "/prod9.webp",
     sub: "(Cabin parts, trims, glass, filters, insulation, fasteners)",
   },
 ];
@@ -38,16 +30,13 @@ export default function CommoditiesGrid() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <Box sx={{  py: 6, px: 2 }}>
+    <Box sx={{ py: 6, px: 2 }}>
       <Grid container spacing={3} justifyContent="center">
         {items.map((item, index) => (
           <Grid
           size={{xs: 12, sm: 6, md: 4}}
             key={index}
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
+            sx={{ display: "flex", justifyContent: "center" }}
           >
             <Card
               sx={{
@@ -70,8 +59,16 @@ export default function CommoditiesGrid() {
                   textAlign: "center",
                 }}
               >
-                <Box sx={{ fontSize: 40, color: "primary.main", mb: 1 }}>
-                  {item.icon}
+                <Box sx={{ mb: 1 }}>
+                  <img
+                    src={item.image}
+                    alt={item.label}
+                    style={{
+                      width: "18rem",
+                      height: "21rem",
+                      objectFit: "contain",
+                    }}
+                  />
                 </Box>
                 <Typography variant="h6" fontWeight="600">
                   {item.label}

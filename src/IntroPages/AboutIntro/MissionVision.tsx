@@ -158,29 +158,6 @@ export default function MissionVision(props: Props) {
                             </Typography>
                         </motion.div>
                     ))}
-
-                    <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
-                        <motion.div custom={5} variants={textVariant}>
-                            <Button
-                                variant="outlined"
-                                sx={{
-                                    color: 'white',
-                                    borderColor: 'white',
-                                    px: 4,
-                                    py: 1.5,
-                                    fontWeight: 500,
-                                    '&:hover': {
-                                        backgroundColor: 'white',
-                                        color: 'black',
-                                        borderColor: 'white',
-                                    },
-                                }}
-                                onClick={handleButtonClick}
-                            >
-                                Learn More
-                            </Button>
-                        </motion.div>
-                    </Box>
                 </motion.div>
             </Grid>
         </Grid>
