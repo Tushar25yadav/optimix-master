@@ -154,22 +154,22 @@ const Contact = () => {
                             <Typography variant="subtitle2" color="text.secondary" fontWeight={500}>
                                 ADDRESS
                             </Typography>
-                            <Typography>500 Terry Francine Street</Typography>
-                            <Typography>San Francisco, CA 94158</Typography>
+                            <Typography>Khasra No 250/1/2/1 Jawahar Tekri, Sinhasa,</Typography>
+                            <Typography>Dhar Road, Indore - 452002, Madhya Pradesh, India</Typography>
                         </Box>
 
                         <Box mb={3} textAlign="center">
                             <Typography variant="subtitle2" color="text.secondary" fontWeight={500}>
                                 PHONE
                             </Typography>
-                            <Typography>123-456-7890</Typography>
+                            <Typography>08047645304</Typography>
                         </Box>
 
                         <Box mb={3} textAlign="center">
                             <Typography variant="subtitle2" color="text.secondary" fontWeight={500}>
                                 EMAIL
                             </Typography>
-                            <Typography>info@mysite.com</Typography>
+                            <Typography>info.bharati.udhyam@gmail.com</Typography>
                         </Box>
 
                         <Box display="flex" gap={2} justifyContent="center">

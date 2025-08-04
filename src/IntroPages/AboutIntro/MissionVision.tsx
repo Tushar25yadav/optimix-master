@@ -113,7 +113,7 @@ export default function MissionVision(props: Props) {
                         variants={textVariant}
                         style={{ color: 'white' }}
                     >
-                        At Optimax Advisory, we bring 25+ years of engineering and manufacturing expertise to help businesses streamline operations, optimize sourcing, and scale with data-driven precision.
+                        Indore, Madhya Pradesh (India) based, Bharti Udhyam was established in 1995 and in a very short period, we emerged a renowned manufacturer and supplier of an extensive range of Ball Mill, Industrial Ribbon Blenders, Ribbon Blender, Cage Mill, High Speed Mixer, MS Detergent Cage Mill and other related products. Besides, our offered range of products are highly demanded as well as appreciated by our customers due to their various attributes like smooth functionality, unparalleled quality, minimal maintenance, elevated service life, reliability and superior performance. We have been serving the demands of the respected clients with customized as well as standard product line in various sizes and specifications.
                     </motion.h3>
 
                     <motion.div custom={0.5} variants={textVariant}>

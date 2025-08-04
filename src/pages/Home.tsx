@@ -23,7 +23,7 @@ const Home: React.FC<Props> = ({ onNavChange }) => {
             <motion.div
                 style={{
                     position: "relative",
-                    backgroundImage: `url(${process.env.PUBLIC_URL + "/backimg2.jpg"})`,
+                    backgroundImage: `url(${process.env.PUBLIC_URL + "/backimg2.webp"})`,
                     backgroundSize: "cover",
                     backgroundPositionY: bgY,
                     backgroundRepeat: "no-repeat",
@@ -60,7 +60,7 @@ const Home: React.FC<Props> = ({ onNavChange }) => {
                 style={{
                     position: "absolute",
                     bottom: 20,
-                    right: 20,
+                    left: 20,
                     backgroundColor: Color.orange,
                     color: "white",
                     padding: "15px 20px",

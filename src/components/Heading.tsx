@@ -8,22 +8,24 @@ export default function Heading() {
         {`
           .heading-container {
             text-align: left;
-            padding: 0 20px;
+            padding: 30px 20px 0;
           }
 
           .heading-title {
             font-size: 3.5rem;
             font-weight: 700;
-            background: linear-gradient(to right, #ffffff, #d0d0d0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #000; /* Black text */
+            background-color: #fff; /* White background */
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 8px;
             margin-bottom: 20px;
           }
 
           .heading-sub {
             font-size: 1.25rem;
             font-weight: 400;
-            color: #f0f0f0;
+            color: #fcf2f2ff;
             line-height: 1.6;
             max-width: 700px;
           }
@@ -48,13 +50,14 @@ export default function Heading() {
       <div className="heading-container">
         <motion.h1
           className="heading-title"
-          initial={{ y: 40, opacity: 0 }}
+          initial={{ y: 45, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          Optimizing Resources. Maximizing Profit.
+          Built to last. Designed to scale.
         </motion.h1>
 
+        {/* 
         <motion.p
           className="heading-sub"
           initial={{ opacity: 0, y: 10 }}
@@ -72,6 +75,8 @@ export default function Heading() {
         >
           <i>Powered by data, discipline, and expert-led consulting at every step.</i>
         </motion.p>
+        */}
+
       </div>
     </>
   );

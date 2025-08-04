@@ -23,7 +23,7 @@ const SectionIntro: React.FC<SectionIntroProps> = ({
   const inView = useInView(ref, { once: true, margin: '-100px' });
 
   const isBgColored = bgcolor !== 'transparent' && bgcolor !== '';
-  const textColor = isBgColored ? 'white' : 'black';
+  const textColor = isBgColored ? 'black' : 'black';
 
   return (
     <div style={{backgroundColor: bgcolor}}>

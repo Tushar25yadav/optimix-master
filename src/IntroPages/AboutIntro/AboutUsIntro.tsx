@@ -12,13 +12,13 @@ function AboutUsIntro(props: Props) {
             <SectionIntro
                 title="ABOUT US"
                 descriptionLines={[
-                    "We simplify construction",
-                    "processes to increase",
-                    "your project velocity",
+                    "Machines that power",
+                    "both small & large",
+                    "scale production",
                 ]}
-                bgcolor="black"
+                bgcolor="white"
             />
-            <MotionLine color='white'/>
+            <MotionLine color='black'/>
             <MissionVision onNavChange={props.onNavChange} />
         </>
     );
