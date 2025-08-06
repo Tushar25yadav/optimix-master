@@ -85,7 +85,7 @@ const Home: React.FC<Props> = ({ onNavChange }) => {
 
             {/* Quote Section */}
             <ParallaxImage
-                image="https://static.wixstatic.com/media/c837a6_c4ec010a6ed34a1e8b7068fffc7e6062~mv2.jpg/v1/fill/w_1960,h_1946,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_c4ec010a6ed34a1e8b7068fffc7e6062~mv2.jpg"
+                image={process.env.PUBLIC_URL + "/mid.webp"}
                 text="We believe business must look beyond itself to serve communities and build lasting impact."
                 author="Ratan Tata"
             />
