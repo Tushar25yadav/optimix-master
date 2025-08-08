@@ -36,7 +36,7 @@ const Contact = () => {
         e.preventDefault();
         setLoading(true);
 
-        const url = "https://script.google.com/macros/s/AKfycbymrO_WO0esLtfa9jEF2fzY0LAZX49OdkrsQXqDCFBLPdH4Ogc6QT1hwW4zuKFLdlCwBA/exec";
+        const url = "https://script.google.com/macros/s/AKfycbzyXrzGgTB-NgfdhsekO7uKAwp0JilLM117IkoObuNLfjcBmwKDGJ0nj9Ij8d9An3VS4w/exec";
 
         fetch(url, {
             method: "POST",
