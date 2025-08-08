@@ -22,7 +22,7 @@ export default function ParallaxImage(props: Props) {
                         scale: [1.05, 1.2],
                     },
                 ]}
-                style={{ aspectRatio: '3 / 1', overflow: 'hidden', objectFit: 'cover', display: isMobile ? 'none' : '' }}
+                style={{ aspectRatio: '8 / 2', overflow: 'hidden', objectFit: 'contain', display: isMobile ? 'none' : '' }}
             >
                 <div
                     style={{

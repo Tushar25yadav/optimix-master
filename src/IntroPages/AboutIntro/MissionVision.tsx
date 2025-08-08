@@ -38,6 +38,7 @@ export default function MissionVision(props: Props) {
     const images = [
         process.env.PUBLIC_URL + "/C1.webp",
         process.env.PUBLIC_URL + "/C2.webp",
+        process.env.PUBLIC_URL + "/C3.webp",
     ];
 
 

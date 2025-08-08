@@ -84,11 +84,11 @@ const Home: React.FC<Props> = ({ onNavChange }) => {
             </section>
 
             {/* Quote Section */}
-            <ParallaxImage
+            {/* <ParallaxImage
                 image={process.env.PUBLIC_URL + "/mid.webp"}
                 text="We believe business must look beyond itself to serve communities and build lasting impact."
                 author="Ratan Tata"
-            />
+            /> */}
 
             {/* Product Section */}
             <section id="Product">
