@@ -22,9 +22,9 @@ const items = [
     mainImage: process.env.PUBLIC_URL + "/prod1.webp",
     images: [
       process.env.PUBLIC_URL + "/prod1.webp",
-      process.env.PUBLIC_URL + "/prod1.webp",
-      process.env.PUBLIC_URL + "/prod1.webp",
-      process.env.PUBLIC_URL + "/prod1.webp",
+      process.env.PUBLIC_URL + "/1.1.webp",
+      process.env.PUBLIC_URL + "/1.3.webp",
+      process.env.PUBLIC_URL + "/1.4.webp",
     ],
     content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
     price: "₹3,30,000 / Piece",
@@ -41,9 +41,9 @@ const items = [
     mainImage: process.env.PUBLIC_URL + "/prod2.webp",
     images: [
       process.env.PUBLIC_URL + "/prod2.webp",
-      process.env.PUBLIC_URL + "/prod2.webp",
-      process.env.PUBLIC_URL + "/prod2.webp",
-      process.env.PUBLIC_URL + "/prod2.webp",
+      process.env.PUBLIC_URL + "/2.2.webp",
+      process.env.PUBLIC_URL + "/2.3.webp",
+      process.env.PUBLIC_URL + "/2.4.webp",
     ],
     content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
     price: "₹3,30,000 / Piece",
@@ -60,9 +60,9 @@ const items = [
     mainImage: process.env.PUBLIC_URL + "/prod3.webp",
     images: [
       process.env.PUBLIC_URL + "/prod3.webp",
-      process.env.PUBLIC_URL + "/prod3.webp",
-      process.env.PUBLIC_URL + "/prod3.webp",
-      process.env.PUBLIC_URL + "/prod3.webp",
+      /*process.env.PUBLIC_URL + "/3.2.webp",*/
+      process.env.PUBLIC_URL + "/3.3.webp",
+      process.env.PUBLIC_URL + "/3.4.webp",
     ],
     content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
     price: "₹3,30,000 / Piece",
@@ -79,9 +79,9 @@ const items = [
     mainImage: process.env.PUBLIC_URL + "/prod4.webp",
     images: [
       process.env.PUBLIC_URL + "/prod4.webp",
-      process.env.PUBLIC_URL + "/prod4.webp",
-      process.env.PUBLIC_URL + "/prod4.webp",
-      process.env.PUBLIC_URL + "/prod4.webp",
+      process.env.PUBLIC_URL + "/4.2.webp",
+      process.env.PUBLIC_URL + "/4.3.webp",
+      /*process.env.PUBLIC_URL + "/4.4.webp",*/
     ],
     content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
     price: "₹3,30,000 / Piece",
@@ -98,9 +98,8 @@ const items = [
     mainImage: process.env.PUBLIC_URL + "/prod5.webp",
     images: [
       process.env.PUBLIC_URL + "/prod5.webp",
-      process.env.PUBLIC_URL + "/prod5.webp",
-      process.env.PUBLIC_URL + "/prod5.webp",
-      process.env.PUBLIC_URL + "/prod5.webp",
+      process.env.PUBLIC_URL + "/5.2.webp",
+      /*process.env.PUBLIC_URL + "/5.3.webp",*/
     ],
     content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
     price: "₹3,30,000 / Piece",
@@ -113,13 +112,12 @@ const items = [
           minimize time losses as well as labour. Consists of a Mixer Drum along with a Cage Mill.`
   },
   {
-    label: "Industrial Agitator",
-    mainImage: process.env.PUBLIC_URL + "/prod6.webp",
+    label: "Others",
+    mainImage: process.env.PUBLIC_URL + "/6.3.webp",
     images: [
-      process.env.PUBLIC_URL + "/prod6.webp",
-      process.env.PUBLIC_URL + "/prod6.webp",
-      process.env.PUBLIC_URL + "/prod6.webp",
-      process.env.PUBLIC_URL + "/prod6.webp",
+      process.env.PUBLIC_URL + "/6.3.webp",
+      process.env.PUBLIC_URL + "/6.2.webp",
+      process.env.PUBLIC_URL + "/6.4.webp",
     ],
     content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
     price: "₹3,30,000 / Piece",
@@ -131,7 +129,7 @@ const items = [
     sub: `Machinery for Detergent Powder Manufacturing Industries. A customized machine designed to
           minimize time losses as well as labour. Consists of a Mixer Drum along with a Cage Mill.`
   },
-  {
+  /*{
     label: "Vibro Screener",
     mainImage: process.env.PUBLIC_URL + "/prod7.webp",
     images: [
@@ -187,7 +185,7 @@ const items = [
     material: 'Stainless Steel',
     sub: `Machinery for Detergent Powder Manufacturing Industries. A customized machine designed to
           minimize time losses as well as labour. Consists of a Mixer Drum along with a Cage Mill.`
-  },
+  },*/
 ];
 
 const Transition = React.forwardRef(function Transition(
