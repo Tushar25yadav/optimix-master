@@ -19,173 +19,254 @@ import { TransitionProps } from "@mui/material/transitions";
 const items = [
   {
     label: "Ribbon Blender",
-    mainImage: process.env.PUBLIC_URL + "/prod1.webp",
-    images: [
-      process.env.PUBLIC_URL + "/prod1.webp",
-      process.env.PUBLIC_URL + "/1.1.webp",
-      process.env.PUBLIC_URL + "/1.3.webp",
-      process.env.PUBLIC_URL + "/1.4.webp",
+    catelog: [
+      {
+        image: process.env.PUBLIC_URL + "/prod1.webp",
+        content: `Detergent Powder Plant`,
+        price: "₹3,30,000 / Piece",
+        capacity: "100 Kgs / Batch",
+        grade: "Semi-Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Stainless Steel",
+        sub: `Machinery for Detergent Powder Manufacturing Industries.
+A Customized Machine designed to minimize Time losses as well as Labour.
+Consists of a Mixer Drum along with a Cage Mill.`,
+      },
+      {
+        image: process.env.PUBLIC_URL + "/1.1.webp",
+        content: `Detergent Mixer Machine`,
+        price: "₹88,000 / Piece",
+        capacity: "2000 Kgs / Batch",
+        grade: "Semi-Automatic",
+        type: "Pulley & Gearbox",
+        brand: "Bharati Udhyam",
+        material: "MS/SS",
+        sub: `Ribbon blender is used for mixing dry powder like Wall putti, Ready Mix Food/Spices, Detergent, Tiles adhesive, Herbal medicines, Fertilizer industries etc.
+
+ 
+
+It is also used for paste/slurry making in Confectionary, Tooth Paste, Distemper & Acrylic paints, cosmetics, Different lotions, Liquid soap industries etc.`,
+      },
+      {
+        image: process.env.PUBLIC_URL + "/1.3.webp",
+        content: `Tiles Adhesive Mixer Machine`,
+        price: "₹92,000 / Piece",
+        capacity: "As per requirement",
+        grade: "Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Mild Steel",
+        sub: `This blender consists of U shaped open drum with a rotating Shaft having Spiral ribbons/Paddle shaped Blades that rotates on a horizontal axis, mounted on a sturdy structure. Our clients can avail this Blender in different specifications in accordance with their specific demands`,
+      },
+      {
+        image: process.env.PUBLIC_URL + "/1.4.webp",
+        content: `Industrial SS Paint Mixing Machine`,
+        price: "₹88,000 / Piece",
+        capacity: "1200-1500 Kgs / Batch",
+        grade: "Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Stainless   Steel & Mild Steel",
+        sub: `Mixing Drum is made up of Stainless Steel 316.
+This Paint Mixing Machine Can be used for mixing material 1200-1500 KG per Batch.
+
+Its Frame is made of Mild Steel Heavy C channel.
+Equipped with a Suitable Gearbox, it is one of the silent Machinery available.`,
+      },
     ],
-    content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
-    price: "₹3,30,000 / Piece",
-    capacity: '100 Kgs / Batch',
-    grade: 'Semi-Automatic',
-    type: 'Customized',
-    brand: 'Bharati Udhyam',
-    material: 'Stainless Steel',
-    sub: `Machinery for Detergent Powder Manufacturing Industries. A customized machine designed to
-          minimize time losses as well as labour. Consists of a Mixer Drum along with a Cage Mill.`
   },
   {
     label: "Liquid Mixing Machine",
-    mainImage: process.env.PUBLIC_URL + "/prod2.webp",
-    images: [
-      process.env.PUBLIC_URL + "/prod2.webp",
-      process.env.PUBLIC_URL + "/2.2.webp",
-      process.env.PUBLIC_URL + "/2.3.webp",
-      process.env.PUBLIC_URL + "/2.4.webp",
+    catelog: [
+      {
+        image: process.env.PUBLIC_URL + "/prod2.webp",
+        content: `Industrial Liquid Mixers`,
+        price: "₹90,000 / Piece",
+        capacity: "300 Ltr",
+        grade: "Semi-Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Stainless Steel",
+        sub: `A perfect Equipment for mixing of Liquid Soap/ Detergent/ Sanatizer/ Hand Wash/ Shampoo/ Toilet Cleaner/ Resin/ Chocolate at slow Speeds.
+Gives even distribution of contents for a Homogeneous Product.`,
+      },
+      {
+        image: process.env.PUBLIC_URL + "/2.2.webp",
+        content: `Portable Liquid Mixer`,
+        price: "₹22,000 / Piece",
+        capacity: "100 Ltr",
+        grade: "Semi-Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Stainless Steel",
+        sub: `A perfect Equipment for mixing of Liquid Soap/ Detergent/ Sanatizer/ Hand Wash/ Shampoo/ Toilet Cleaner/ Resin/ Chocolate at slow Speeds.
+Gives even distribution of contents for a Homogeneous Product.`,
+      },
+      {
+        image: process.env.PUBLIC_URL + "/2.3.webp",
+        content: `High Speed Stirrer`,
+        price: "₹76,000 / Piece",
+        capacity: "400 Ltr",
+        grade: "Semi-Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Stainless Steel",
+        sub: `Mainly used in chemical synthesis, pharmaceutical, physical and chemical analysis, petrochemical, chemical, cosmetics, health products, food, biotechnology, and other fields. > Suitable for large-volume, high-viscosity sample stirring tasks.`,
+      },
+      {
+        image: process.env.PUBLIC_URL + "/2.4.webp",
+        content: `High Shear Stirrer`,
+        price: "₹76,000 / Piece",
+        capacity: "1000 Ltr",
+        grade: "Semi-Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Stainless Steel",
+        sub: `Running at Blade speed of about 1400-2800 RPM, the Blade of our High Speed Blender creates a turbulent flow/vortex in the batch to disperse dry powders into the solvent quickly within an acceptable level of dispersion`,
+      },// ...more
     ],
-    content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
-    price: "₹3,30,000 / Piece",
-    capacity: '100 Kgs / Batch',
-    grade: 'Semi-Automatic',
-    type: 'Customized',
-    brand: 'Bharati Udhyam',
-    material: 'Stainless Steel',
-    sub: `Machinery for Detergent Powder Manufacturing Industries. A customized machine designed to
-          minimize time losses as well as labour. Consists of a Mixer Drum along with a Cage Mill.`
   },
   {
     label: "Detergent Cage Mill",
-    mainImage: process.env.PUBLIC_URL + "/prod3.webp",
-    images: [
-      process.env.PUBLIC_URL + "/prod3.webp",
-      /*process.env.PUBLIC_URL + "/3.2.webp",*/
-      process.env.PUBLIC_URL + "/3.3.webp",
-      process.env.PUBLIC_URL + "/3.4.webp",
+    catelog: [
+      {
+        image: process.env.PUBLIC_URL + "/prod3.webp",
+        content: `Detergent Cage Miller`,
+        price: "₹39,000 / Piece",
+        capacity: "600 Kg/Hr",
+        grade: "Semi-Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Mild Steel",
+        sub: `This Segregator consists of Cylinder with a rotating Shaft having Paddle shaped Blades that rotates on a horizontal axis, mounted on a sturdy structure.
+
+Beneath the Paddle shaped blades is a steel mesh which only allows fine Powder particles to pass to the shoot region & rest of the particles rotate along with the shaft until they break into smaller pieces.`,
+      },
+      {
+        image: process.env.PUBLIC_URL + "/3.3.webp",
+        content: `Detergent Channa / Chalna`,
+        price: "₹39,000 / Piece",
+        capacity: "100 Kg",
+        grade: "Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Mild Steel & Stainless Steel",
+        sub: `Used by detergent manufacturing industries, Also known as Detergent Cage Mills.`,
+      },
+      {
+        image: process.env.PUBLIC_URL + "/3.4.webp",
+        content: `Detergent Screening Machine`,
+        price: "₹39,000 / Piece",
+        capacity: "10 Ton / Day",
+        grade: "Semi-Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Stainless Steel",
+        sub: `Cage mills is use for the sieving of detergent powder, having capacity of about 10 /5Tonne per day. Equipped with the 2/1 HP motor, it's a highly effective machine for the particle segregation of detergent powder.`,
+      },// ...more
     ],
-    content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
-    price: "₹3,30,000 / Piece",
-    capacity: '100 Kgs / Batch',
-    grade: 'Semi-Automatic',
-    type: 'Customized',
-    brand: 'Bharati Udhyam',
-    material: 'Stainless Steel',
-    sub: `Machinery for Detergent Powder Manufacturing Industries. A customized machine designed to
-          minimize time losses as well as labour. Consists of a Mixer Drum along with a Cage Mill.`
   },
   {
     label: "Ball Mill",
-    mainImage: process.env.PUBLIC_URL + "/prod4.webp",
-    images: [
-      process.env.PUBLIC_URL + "/prod4.webp",
-      process.env.PUBLIC_URL + "/4.2.webp",
-      process.env.PUBLIC_URL + "/4.3.webp",
-      /*process.env.PUBLIC_URL + "/4.4.webp",*/
+    catelog: [
+      {
+        image: process.env.PUBLIC_URL + "/prod4.webp",
+        content: `Industrial Ball Mill`,
+        price: "₹60,000 / Piece",
+        capacity: "As per requirement",
+        grade: "Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Stainless Steel",
+        sub: `Our organization has gained recognition as the affluent manufacturer and supplier of a qualitative range of Ball Mill. This mill consists of cylindrical shell that rotates on a horizontal axis, mounted on a sturdy structure. Our clients can avail this mill in different specifications in accordance with their specific demands.`,
+      },
+      {
+        image: process.env.PUBLIC_URL + "/4.2.webp",
+        content: `Ceramic / Mineral Ball Mill`,
+        price: "₹80,000 / Piece",
+        capacity: "As per requirement",
+        grade: "Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Mild Steel",
+        sub: `The ball mill is key equipment in grinding, mixing and dispersing, especially for mineral (Quartz, Lime, Cement), Flux making, Abrasives, Colour/Paint, chemicals and Pharmaceutical Industries.`,
+      },
+      {
+        image: process.env.PUBLIC_URL + "/4.3.webp",
+        content: `Ball Grinding Mill`,
+        price: "₹60,000 / Piece",
+        capacity: "As per requirement",
+        grade: "Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Stainless Steel",
+        sub: `Our organization has gained recognition as the affluent manufacturer and supplier of a qualitative range of Ball Mill. This mill consists of cylindrical shell that rotates on a horizontal axis, mounted on a sturdy structure. Our clients can avail this mill in different specifications in accordance with their specific demands`,
+      },
     ],
-    content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
-    price: "₹3,30,000 / Piece",
-    capacity: '100 Kgs / Batch',
-    grade: 'Semi-Automatic',
-    type: 'Customized',
-    brand: 'Bharati Udhyam',
-    material: 'Stainless Steel',
-    sub: `Machinery for Detergent Powder Manufacturing Industries. A customized machine designed to
-          minimize time losses as well as labour. Consists of a Mixer Drum along with a Cage Mill.`
   },
   {
     label: "Plastic Paint Mixer Machine",
-    mainImage: process.env.PUBLIC_URL + "/prod5.webp",
-    images: [
-      process.env.PUBLIC_URL + "/prod5.webp",
-      process.env.PUBLIC_URL + "/5.2.webp",
-      /*process.env.PUBLIC_URL + "/5.3.webp",*/
+    catelog: [
+      {
+        image: process.env.PUBLIC_URL + "/prod5.webp",
+        conten1: `Paint Mixers`,
+        price: "₹3,10,000 / Piece",
+        capacity: "600 Ltrs",
+        grade: "Semi-Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Stainless Steel",
+        sub: `Our organization has gained recognition as the affluent manufacturer and supplier of a qualitative range of High Speed Blender. Also sometimes called High Speed Dissolver/Mixer, is a standard workhorse in the coatings industries. An economical and relatively simple piece of mixing equipment, its primary purpose is to incorporate powders into liquid and break down loose agglomerates to produce an acceptable level of dispersion prior to milling.
+
+Running at Blade speed of about 1500-1600 RPM, the Blade of our High Speed Blender creates a turbulent flow/vortex in the batch to disperse dry powders into the solvent quickly within an acceptable level of dispersion.`,
+      },
+      {
+        image: process.env.PUBLIC_URL + "/5.2.webp",
+        content: `Agitator`,
+        price: "₹3,1000 / Piece",
+        capacity: "2000 Kgs / Batch",
+        grade: "Semi-Automatic",
+        type: "Pulley & Gearbox",
+        brand: "Bharati Udhyam",
+        material: "MS/SS",
+        sub: `Our organization has gained recognition as the affluent manufacturer and supplier of a qualitative range of High Speed Blender. Also sometimes called High Speed Dissolver/Mixer, is a standard workhorse in the coatings industries. An economical and relatively simple piece of mixing equipment, its primary purpose is to incorporate powders into liquid and break down loose agglomerates to produce an acceptable level of dispersion prior to milling.
+
+Running at Blade speed of about 1500-1600 RPM, the Blade of our High Speed Blender creates a turbulent flow/vortex in the batch to disperse dry powders into the solvent quickly within an acceptable level of dispersion.`,
+      },
     ],
-    content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
-    price: "₹3,30,000 / Piece",
-    capacity: '100 Kgs / Batch',
-    grade: 'Semi-Automatic',
-    type: 'Customized',
-    brand: 'Bharati Udhyam',
-    material: 'Stainless Steel',
-    sub: `Machinery for Detergent Powder Manufacturing Industries. A customized machine designed to
-          minimize time losses as well as labour. Consists of a Mixer Drum along with a Cage Mill.`
   },
   {
-    label: "Others",
-    mainImage: process.env.PUBLIC_URL + "/6.3.webp",
-    images: [
-      process.env.PUBLIC_URL + "/6.3.webp",
-      process.env.PUBLIC_URL + "/6.2.webp",
-      process.env.PUBLIC_URL + "/6.4.webp",
+    label: "Others Products",
+    catelog: [
+      {
+        image: process.env.PUBLIC_URL + "/6.3.webp",
+        conten1: `Paint Mixers`,
+        price: "₹3,10,000 / Piece",
+        capacity: "600 Ltrs",
+        grade: "Semi-Automatic",
+        type: "Customized",
+        brand: "Bharati Udhyam",
+        material: "Stainless Steel",
+        sub: `Our organization has gained recognition as the affluent manufacturer and supplier of a qualitative range of High Speed Blender. Also sometimes called High Speed Dissolver/Mixer, is a standard workhorse in the coatings industries. An economical and relatively simple piece of mixing equipment, its primary purpose is to incorporate powders into liquid and break down loose agglomerates to produce an acceptable level of dispersion prior to milling.
+
+Running at Blade speed of about 1500-1600 RPM, the Blade of our High Speed Blender creates a turbulent flow/vortex in the batch to disperse dry powders into the solvent quickly within an acceptable level of dispersion.`,
+      },
+      {
+        image: process.env.PUBLIC_URL + "/5.2.webp",
+        content: `Agitator`,
+        price: "₹3,1000 / Piece",
+        capacity: "2000 Kgs / Batch",
+        grade: "Semi-Automatic",
+        type: "Pulley & Gearbox",
+        brand: "Bharati Udhyam",
+        material: "MS/SS",
+        sub: `Our organization has gained recognition as the affluent manufacturer and supplier of a qualitative range of High Speed Blender. Also sometimes called High Speed Dissolver/Mixer, is a standard workhorse in the coatings industries. An economical and relatively simple piece of mixing equipment, its primary purpose is to incorporate powders into liquid and break down loose agglomerates to produce an acceptable level of dispersion prior to milling.
+
+Running at Blade speed of about 1500-1600 RPM, the Blade of our High Speed Blender creates a turbulent flow/vortex in the batch to disperse dry powders into the solvent quickly within an acceptable level of dispersion.`,
+      },
     ],
-    content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
-    price: "₹3,30,000 / Piece",
-    capacity: '100 Kgs / Batch',
-    grade: 'Semi-Automatic',
-    type: 'Customized',
-    brand: 'Bharati Udhyam',
-    material: 'Stainless Steel',
-    sub: `Machinery for Detergent Powder Manufacturing Industries. A customized machine designed to
-          minimize time losses as well as labour. Consists of a Mixer Drum along with a Cage Mill.`
   },
-  /*{
-    label: "Vibro Screener",
-    mainImage: process.env.PUBLIC_URL + "/prod7.webp",
-    images: [
-      process.env.PUBLIC_URL + "/prod7.webp",
-      process.env.PUBLIC_URL + "/prod7.webp",
-      process.env.PUBLIC_URL + "/prod7.webp",
-      process.env.PUBLIC_URL + "/prod7.webp",
-    ],
-    content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
-    price: "₹3,30,000 / Piece",
-    capacity: '100 Kgs / Batch',
-    grade: 'Semi-Automatic',
-    type: 'Customized',
-    brand: 'Bharati Udhyam',
-    material: 'Stainless Steel',
-    sub: `Machinery for Detergent Powder Manufacturing Industries. A customized machine designed to
-          minimize time losses as well as labour. Consists of a Mixer Drum along with a Cage Mill.`
-  },
-  {
-    label: "Hot Air Dryer",
-    mainImage: process.env.PUBLIC_URL + "/prod8.webp",
-    images: [
-      process.env.PUBLIC_URL + "/prod8.webp",
-      process.env.PUBLIC_URL + "/prod8.webp",
-      process.env.PUBLIC_URL + "/prod8.webp",
-      process.env.PUBLIC_URL + "/prod8.webp",
-    ],
-    content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
-    price: "₹3,30,000 / Piece",
-    capacity: '100 Kgs / Batch',
-    grade: 'Semi-Automatic',
-    type: 'Customized',
-    brand: 'Bharati Udhyam',
-    material: 'Stainless Steel',
-    sub: `Machinery for Detergent Powder Manufacturing Industries. A customized machine designed to
-          minimize time losses as well as labour. Consists of a Mixer Drum along with a Cage Mill.`
-  },
-  {
-    label: "High Speed Stirrer",
-    mainImage: process.env.PUBLIC_URL + "/prod9.webp",
-    images: [
-      process.env.PUBLIC_URL + "/prod9.webp",
-      process.env.PUBLIC_URL + "/prod9.webp",
-      process.env.PUBLIC_URL + "/prod9.webp",
-      process.env.PUBLIC_URL + "/prod9.webp",
-    ],
-    content: `Ribbon blender is used for mixing dry powder like Wall Putty, Minerals, Chemicals, Ready Mix Food/Spices, Detergent, Tiles Adhesive, Herbal Medicines, Fertilizer Industries etc. It is also used for Paste/Slurry making in Confectionary, Tooth Paste, Distemper & Acrylic Paints, Cosmetics, Different Lotions, Liquid Soap industries etc.`,
-    price: "₹3,30,000 / Piece",
-    capacity: '100 Kgs / Batch',
-    grade: 'Semi-Automatic',
-    type: 'Customized',
-    brand: 'Bharati Udhyam',
-    material: 'Stainless Steel',
-    sub: `Machinery for Detergent Powder Manufacturing Industries. A customized machine designed to
-          minimize time losses as well as labour. Consists of a Mixer Drum along with a Cage Mill.`
-  },*/
 ];
 
 const Transition = React.forwardRef(function Transition(
@@ -200,12 +281,12 @@ export default function CommoditiesGrid() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const [open, setOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState<typeof items[0] | null>(null);
+  const [selectedItem, setSelectedItem] = useState<(typeof items)[0] | null>(null);
   const [selectedImage, setSelectedImage] = useState(0);
 
-  const handleOpen = (item: typeof items[0]) => {
+  const handleOpen = (item: (typeof items)[0]) => {
     setSelectedItem(item);
-    setSelectedImage(0); // Reset on open
+    setSelectedImage(0);
     setOpen(true);
   };
 
@@ -254,7 +335,7 @@ export default function CommoditiesGrid() {
                 >
                   <Box sx={{ mb: 1 }}>
                     <img
-                      src={item.mainImage}
+                      src={item.catelog[0].image}
                       alt={item.label}
                       style={{
                         width: "18rem",
@@ -277,10 +358,10 @@ export default function CommoditiesGrid() {
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar sx={{ position: "relative", backgroundColor: "#333" }}>
           <Toolbar>
-            <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
+            <IconButton edge="start" color="inherit" onClick={handleClose}>
               <CloseIcon />
             </IconButton>
-            <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+            <Typography sx={{ ml: 2, flex: 1 }} variant="h6">
               {selectedItem?.label}
             </Typography>
           </Toolbar>
@@ -292,7 +373,7 @@ export default function CommoditiesGrid() {
               {/* LEFT SIDE */}
               <Grid size={{ xs: 12, md: 6 }}>
                 <Grid container spacing={2}>
-                  {/* Thumbnail Column */}
+                  {/* Thumbnails */}
                   <Grid size={{ xs: 2 }}>
                     <Box
                       sx={{
@@ -303,11 +384,11 @@ export default function CommoditiesGrid() {
                         overflowY: "auto",
                       }}
                     >
-                      {selectedItem.images.map((img, i) => (
+                      {selectedItem.catelog.map((prod, i) => (
                         <Box
                           key={i}
                           component="img"
-                          src={img}
+                          src={prod.image}
                           onClick={() => setSelectedImage(i)}
                           sx={{
                             width: "100%",
@@ -327,7 +408,7 @@ export default function CommoditiesGrid() {
                   <Grid size={{ xs: 10 }}>
                     <Box
                       component="img"
-                      src={selectedItem.images[selectedImage]}
+                      src={selectedItem.catelog[selectedImage].image}
                       alt={selectedItem.label}
                       sx={{
                         width: "100%",
@@ -347,7 +428,7 @@ export default function CommoditiesGrid() {
                   {selectedItem.label}
                 </Typography>
                 <Typography variant="body1" gutterBottom>
-                  {selectedItem.content}
+                  {selectedItem.catelog[selectedImage].content}
                 </Typography>
 
                 <Box mt={3}>
@@ -355,18 +436,18 @@ export default function CommoditiesGrid() {
                     Product Details:
                   </Typography>
                   <ul style={{ paddingLeft: "1.2rem", marginTop: "0.5rem" }}>
-                    <li>💰 <strong>Price: </strong>{selectedItem.price}</li>
-                    <li>📦 <strong>Capacity: </strong>{selectedItem.capacity}</li>
-                    <li>⚙️ <strong>Automation Grade: </strong>{selectedItem.grade}</li>
-                    <li>📐 <strong>Design Type:</strong>{selectedItem.type}</li>
-                    <li>🏷️ <strong>Brand: </strong> {selectedItem.brand}</li>
-                    <li>🔩 <strong>Material: </strong> {selectedItem.material}</li>
+                    <li><strong>Price: </strong>{selectedItem.catelog[selectedImage].price}</li>
+                    <li><strong>Capacity: </strong>{selectedItem.catelog[selectedImage].capacity}</li>
+                    <li><strong>Automation Grade: </strong>{selectedItem.catelog[selectedImage].grade}</li>
+                    <li><strong>Design Type: </strong>{selectedItem.catelog[selectedImage].type}</li>
+                    <li><strong>Brand: </strong>{selectedItem.catelog[selectedImage].brand}</li>
+                    <li><strong>Material: </strong>{selectedItem.catelog[selectedImage].material}</li>
                   </ul>
                 </Box>
 
                 <Box mt={4}>
                   <Typography variant="body2" color="text.secondary">
-                    {selectedItem.sub}
+                    {selectedItem.catelog[selectedImage].sub}
                   </Typography>
                 </Box>
               </Grid>
